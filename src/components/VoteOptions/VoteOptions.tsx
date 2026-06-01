@@ -1,9 +1,10 @@
 // src/components/VoteOptions/VoteOptions.tsx
 
 import css from './VoteOptions.module.css';
+import type { VoteType } from '../../types/votes';
 
 interface VoteOptionsProps {
-    onVote: (options: 'good' | 'neutral' | 'bad') => void;
+    onVote: (options: VoteType) => void;
     onReset: () => void;
     canReset: boolean;
 }
